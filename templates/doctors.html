@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .doctor-card {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .doctor-card img {
+            width: 100px; /* Set width of the image */
+            height: 100px; /* Set height of the image */
+            border-radius: 50%; /* Make image circular */
+            object-fit: cover; /* Ensure the image fits within the circle */
+            margin-bottom: 15px; /* Add some space below the image */
+        }
+
+        .doctor-card h5 {
+            margin-bottom: 15px;
+        }
+
+        .doctor-card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MediPred</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/developer">Developer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/doctors">Doctors</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container">
+    <h2 class="mt-4 mb-4">List of Doctors</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="doctor-card">
+              <img src="{{ url_for('static', filename='doc1.png') }}" alt="Dr.Geeta Kamath"> 
+                <h5>Dr. Geeta Kamath</h5>
+                <p><strong>Phone:</strong> +1 234 567 8901</p>
+                <p><strong>Website:</strong> <a href="https://kamathclinic.com" target="_blank">https://kamaths.com</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+              <img src="{{ url_for('static', filename='doc2.png') }}" alt="Dr.Ashwin Maurya"> 
+                <h5>Dr. Ashwin Maurya</h5>
+                <p><strong>Phone:</strong> +1 987 654 3210</p>
+                <p><strong>Website:</strong> <a href="https://ashwindoc.com" target="_blank">https://ashwindoc.com</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="doctor-card">
+              <img src="{{ url_for('static', filename='doc1.png') }}" alt="Dr.Rohit Sharma">
+                <h5>Dr. Rohit Sharma</h5>
+                <p><strong>Phone:</strong> +1 555 123 4567</p>
+                <p><strong>Website:</strong> <a href="https://rg264doctor4u.com" target="_blank">https://rg264doctor4u.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="doctor-card">
+        <img src="{{ url_for('static', filename='doc2.png') }}" alt="Dr.Rohit Sharma">
+          <h5>Dr. Rohit Sharma</h5>
+          <p><strong>Phone:</strong> +1 555 123 4567</p>
+          <p><strong>Website:</strong> <a href="https://rg264doctor4u.com" target="_blank">https://rg264doctor4u.com</a></p>
+      </div>
+  </div>
+</div>
+
+    <!-- Add more doctor cards here as needed -->
+    
+</div>
+
+</body>
+</html>

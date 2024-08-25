@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - MediPredict</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .symptoms-container {
+            max-height: 400px; 
+            overflow-y: scroll;
+            border: 1px solid #ccc; 
+            padding: 10px; 
+          }
+
+      .about-content {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #1f2937;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555555;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MediPred</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/developer">Developer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/doctors">Doctors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container about-content">
+      <h2>About MediPredict</h2>
+      <p>MediPredict is an advanced health prediction system designed to assist individuals in identifying potential diseases based on their symptoms. Our system uses state-of-the-art machine learning algorithms to provide accurate predictions and useful health information.</p>
+
+      <h3>What We Predict</h3>
+      <p>Our application can predict a wide range of diseases based on a variety of symptoms. Some of the common diseases we can predict include:</p>
+      <ul>
+        <li>Fungal Infection</li>
+        <li>Allergy</li>
+        <li>GERD (Gastroesophageal Reflux Disease)</li>
+        <li>Chronic Cholestasis</li>
+        <li>Drug Reaction</li>
+        <li>Peptic Ulcer Disease</li>
+        <li>AIDS</li>
+        <li>Diabetes</li>
+        <li>Gastroenteritis</li>
+        <li>Bronchial Asthma</li>
+        <li>Hypertension</li>
+        <li>Migraine</li>
+        <li>Chicken Pox</li>
+        <li>Dengue</li>
+        <li>Typhoid</li>
+        <li>Hepatitis A, B, C, D, and E</li>
+        <li>Varicose Veins</li>
+        <li>Hypothyroidism</li>
+        <li>Hyperthyroidism</li>
+        <li>Heart Attack</li>
+        <li>And many more...</li>
+      </ul>
+
+      <h3 id="symptoms-guide">Symptoms Guide</h3>
+<p>Please input your symptoms from the following Symptoms Guide as it should meet our model's parameters.Spelling Mistakes will cause a error too,copy as it is</p>
+<div class="symptoms-container">
+  <ul>
+    <li>itching</li>
+    <li>skin_rash</li>
+    <li>nodal_skin_eruptions</li>
+    <li>continuous_sneezing</li>
+    <li>shivering</li>
+    <li>chills</li>
+    <li>joint_pain</li>
+    <li>stomach_pain</li>
+    <li>acidity</li>
+    <li>ulcers_on_tongue</li>
+    <li>muscle_wasting</li>
+    <li>vomiting</li>
+    <li>burning_micturition</li>
+    <li>spotting_urination</li>
+    <li>fatigue</li>
+    <li>weight_gain</li>
+    <li>anxiety</li>
+    <li>cold_hands_and_feets</li>
+    <li>mood_swings</li>
+    <li>weight_loss</li>
+    <li>restlessness</li>
+    <li>lethargy</li>
+    <li>patches_in_throat</li>
+    <li>irregular_sugar_level</li>
+    <li>cough</li>
+    <li>high_fever</li>
+    <li>sunken_eyes</li>
+    <li>breathlessness</li>
+    <li>sweating</li>
+    <li>dehydration</li>
+    <li>indigestion</li>
+    <li>headache</li>
+    <li>yellowish_skin</li>
+    <li>dark_urine</li>
+    <li>nausea</li>
+    <li>loss_of_appetite</li>
+    <li>pain_behind_the_eyes</li>
+    <li>back_pain</li>
+    <li>constipation</li>
+    <li>abdominal_pain</li>
+    <li>diarrhoea</li>
+    <li>mild_fever</li>
+    <li>yellow_urine</li>
+    <li>yellowing_of_eyes</li>
+    <li>acute_liver_failure</li>
+    <li>fluid_overload</li>
+    <li>swelling_of_stomach</li>
+    <li>swelled_lymph_nodes</li>
+    <li>malaise</li>
+    <li>blurred_and_distorted_vision</li>
+    <li>phlegm</li>
+    <li>throat_irritation</li>
+    <li>redness_of_eyes</li>
+    <li>sinus_pressure</li>
+    <li>runny_nose</li>
+    <li>congestion</li>
+    <li>chest_pain</li>
+    <li>weakness_in_limbs</li>
+    <li>fast_heart_rate</li>
+    <li>pain_during_bowel_movements</li>
+    <li>pain_in_anal_region</li>
+    <li>bloody_stool</li>
+    <li>irritation_in_anus</li>
+    <li>neck_pain</li>
+    <li>dizziness</li>
+    <li>cramps</li>
+    <li>bruising</li>
+    <li>obesity</li>
+    <li>swollen_legs</li>
+    <li>swollen_blood_vessels</li>
+    <li>puffy_face_and_eyes</li>
+    <li>enlarged_thyroid</li>
+    <li>brittle_nails</li>
+    <li>swollen_extremeties</li>
+    <li>excessive_hunger</li>
+    <li>extra_marital_contacts</li>
+    <li>drying_and_tingling_lips</li>
+    <li>slurred_speech</li>
+    <li>knee_pain</li>
+    <li>hip_joint_pain</li>
+    <li>muscle_weakness</li>
+    <li>stiff_neck</li>
+    <li>swelling_joints</li>
+    <li>movement_stiffness</li>
+    <li>spinning_movements</li>
+    <li>loss_of_balance</li>
+    <li>unsteadiness</li>
+    <li>weakness_of_one_body_side</li>
+    <li>loss_of_smell</li>
+    <li>bladder_discomfort</li>
+    <li>foul_smell_of_urine</li>
+    <li>continuous_feel_of_urine</li>
+    <li>passage_of_gases</li>
+    <li>internal_itching</li>
+    <li>toxic_look_(typhos)</li>
+    <li>depression</li>
+    <li>irritability</li>
+    <li>muscle_pain</li>
+    <li>altered_sensorium</li>
+    <li>red_spots_over_body</li>
+    <li>belly_pain</li>
+    <li>abnormal_menstruation</li>
+    <li>dischromic_patches</li>
+    <li>watering_from_eyes</li>
+    <li>increased_appetite</li>
+    <li>polyuria</li>
+    <li>family_history</li>
+    <li>mucoid_sputum</li>
+    <li>rusty_sputum</li>
+    <li>lack_of_concentration</li>
+    <li>visual_disturbances</li>
+    <li>receiving_blood_transfusion</li>
+    <li>receiving_unsterile_injections</li>
+    <li>coma</li>
+    <li>stomach_bleeding</li>
+    <li>distention_of_abdomen</li>
+    <li>history_of_alcohol_consumption</li>
+    <li>fluid_overload.1</li>
+    <li>blood_in_sputum</li>
+    <li>prominent_veins_on_calf</li>
+    <li>palpitations</li>
+    <li>painful_walking</li>
+    <li>pus_filled_pimples</li>
+    <li>blackheads</li>
+    <li>scurring</li>
+    <li>skin_peeling</li>
+    <li>silver_like_dusting</li>
+    <li>small_dents_in_nails</li>
+    <li>inflammatory_nails</li>
+    <li>blister</li>
+    <li>red_sore_around_nose</li>
+    <li>yellow_crust_ooze</li>
+  </ul>
+</div>
+
+      <h3>How It Works</h3>
+      <p>MediPredict uses a machine learning model trained on a comprehensive dataset of symptoms and diseases. Here’s a brief overview of how our prediction system works:</p>
+      <ol>
+        <li><strong>Symptom Input:</strong> Users enter their symptoms into the application.</li>
+        <li><strong>Symptom Analysis:</strong> The system processes the symptoms using a trained machine learning model to predict the most likely disease.</li>
+        <li><strong>Result Generation:</strong> Based on the prediction, the system provides detailed information including disease description, precautions, medications, recommended workouts, and diets.</li>
+      </ol>
+
+      <h3>Features</h3>
+      <p>In addition to predicting diseases, MediPredict offers the following features:</p>
+      <ul>
+        <li><strong>Description:</strong> Provides a detailed description of the predicted disease.</li>
+        <li><strong>Precautions:</strong> Lists precautionary measures to prevent or manage the disease.</li>
+        <li><strong>Medications:</strong> Recommends medications for treatment.</li>
+        <li><strong>Workouts:</strong> Suggests suitable workouts to aid in recovery.</li>
+        <li><strong>Diets:</strong> Recommends dietary changes to improve health.</li>
+      </ul>
+
+      <h3>Our Commitment</h3>
+      <p>At MediPredict, we are committed to providing accurate and reliable health predictions to help users make informed decisions about their health. Our goal is to offer a user-friendly platform that supports health and wellness through advanced technology and comprehensive information.</p>
+
+      <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
