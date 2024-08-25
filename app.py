@@ -100,7 +100,3 @@ def developer():
 @app.route("/doctors")
 def doctors():
     return render_template("doctors.html")
-
-if __name__ == '__main__':
-
-    app.run(debug=True)
